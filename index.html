@@ -102,9 +102,34 @@
       .widget a, #widget a{
         color: white;
       }
+      .rotate{
+          -webkit-transition-duration: 0.8s;
+          -moz-transition-duration: 0.8s;
+          -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+           
+          -webkit-transition-property: -webkit-transform;
+          -moz-transition-property: -moz-transform;
+          -o-transition-property: -o-transform;
+          transition-property: transform;
+           
+          overflow:hidden;
+        
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+          }  
+       
+      .rotate:hover  
+      {
+          -webkit-transform:rotate(0);
+          -moz-transform:rotate(0);
+          -o-transform:rotate(0);
+      }  
     </style>
   </head> 
   <body>
+  
     <a href="https://twitter.com/JPGInternet" class="twitter-follow-button widget" data-align="right" data-show-screen-name="true" data-show-count="true" data-size="large" data-lang="en">Follow @JPGInternet</a>
     <div class="content">
       <h1 style="text-shadow:-10px 10px 15px rgba(0,0,0,0.4);"><a href="https://www.facebook.com/JPGInternet" class="pink">JPG Internet</a></h1>
@@ -119,7 +144,7 @@
       <div class="right-col">
           <img src="images/animated-gif-explains-jpg-internet.gif" height="202" width="350" alt="" style="box-shadow:-20px 20px 15px rgba(0,0,0,0.4);">
 
-
+          <a id="must-try-now"  style="background:black;color:yellow;display:block;font-size:40px;text-align:center;padding:40px;margin-top:30px;" href="https://www.facebook.com/JPGInternet"> TRY NOW ! </a>
       </div>
       <div class="propaganda">
         <div class="left-prop">
@@ -154,10 +179,12 @@
         </div>
 
         
-        
+        <div style="clear:both;"></div>        
       </div>
+       
+    <a style="background:purple;color:yellow;display:block;font-size:40px;text-align:center;padding:40px;margin-top:30px;" href="https://www.facebook.com/JPGInternet"> Get your FREE JPG now! >>> </a>
+
     </div>
-    
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -167,7 +194,9 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    
+    <script>
+    setTimeout(function(){document.getElementById("must-try-now").className += ' rotate'},100)
+    </script>
 
   </body>
 </html>
