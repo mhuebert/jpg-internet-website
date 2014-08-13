@@ -73,12 +73,18 @@
       .fb-post {
         margin-bottom:30px;
       }
-      .propaganda .fb-post {
-        margin-bottom:40px;
+      .propaganda {
+        margin-top:20px;
+      }
+      .propaganda:after {
+        clear:both;
+      }
+      .propaganda .fb-post, .propaganda .twitter-tweet {
+        margin-bottom:40px !important;
       }
       .propaganda .left-prop, .propaganda .right-prop {
         float:left;
-        width: 400px;
+        width: 350px;
       }
       h1 a {
         text-decoration:  none;
@@ -89,6 +95,7 @@
       }
       .propaganda .left-prop {
         margin-right: 30px;
+        margin-left:70px;
       }
       #widget, .widget {
         position:absolute;top:20px;right:20px;
@@ -137,31 +144,47 @@
       <!-- <a title="Try Now!!!" href="https://www.facebook.com/JPGInternet">
         <img style="width:100%;margin:30px 0;box-shadow:-20px 20px 20px rgba(0,0,0,0.3);" src="images/website-banner.jpg" alt="">
       </a> -->
+      <div class="content">
       <div class="left-col">
-        <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/posts/10152782978314316" data-width="480"></div>
-        <!-- <div class="fb-post" data-href="https://www.facebook.com/zuck/posts/10101561824722531" data-width="480"></div> -->
+        <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/posts/10152782978314316" data-width="480" style="text-align:left;">Hello, world.
+Last week I heard about the launch of Internet.org, and then about the new $12 Facebook-only Sprint plans, and realized that we're quickly moving towards a world in which we'll have people on Facebook, who do not have the Internet. (You may need to read the last half of that sentence again.)
+An idea entered my mind, and I wasn't sure whether to laugh or cry, but I built it - JPG Internet.
+This is not a startup, it's a Facebook Page where you can post a link on the wall*, and servers will grab a screenshot of the website, upload it to Facebook, and reply with a link to the JPG, so you can view the Internet on Facebook. If it is a long webpage, it will cut the image into pieces and upload it as a correctly ordered photo album.
+Those of you who know me are of course aware that I have a history of building ridiculous things, but I believe this tops the list of the dumbest pieces of internet I have ever put my hands on. And yet - though it strains credulity - thanks to the lack of net neutrality, and the attitudes of ISPs, telecom, and Facebook itself, there's a growing number of people who have Facebook without Internet. So.
+You can try it here: https://www.facebook.com/JPGInternet
+* make sure you wait for Facebook to recognize the link and add a preview. I only add links that pass their filters. 
+** please expect/report bugs, this is a hack. It's also open source: https://github.com/mhuebert/http2facebook and https://github.com/mhuebert/facebook-firebase-stream
+*** some friends plan to help add text processing next week, so it will work for people who have the text-only Internet.org version of Facebook, eg/ Zambia, but the JPG version can help our Sprint customers, and there are actually many countries where Facebook cuts deals to become synonymous with "Internet"</div>
       </div>
       <div class="right-col">
-          <img src="images/animated-gif-explains-jpg-internet.gif" height="202" width="350" alt="" style="box-shadow:-20px 20px 15px rgba(0,0,0,0.4);">
-
-          <a id="must-try-now"  style="background:black;color:yellow;display:block;font-size:40px;text-align:center;padding:40px;margin-top:30px;" href="https://www.facebook.com/JPGInternet"> TRY NOW ! </a>
+        <div style="background:yellow;color:black;padding:10px 0;border-bottom:2px solid red;">This Animated GIF Explains How JPG Internet Works:</div>
+        <img src="images/animated-gif-explains-jpg-internet.gif" height="202" width="350" alt="" style="box-shadow:-20px 20px 15px rgba(0,0,0,0.4);margin-bottom:10px;">
+        <a id="must-try-now"  style="background:black;color:yellow;display:block;font-size:40px;text-align:center;padding:40px;margin-top:30px;margin-bottom:40px;" href="https://www.facebook.com/JPGInternet"> TRY NOW ! </a>
+      </div>
+        
       </div>
       <div class="propaganda">
         <div class="left-prop">
+          <blockquote class="twitter-tweet" lang="en"><p>Don&#39;t let the rainbow colours and Comic Sans fool you: <a href="https://twitter.com/jpginternet">@jpginternet</a> is what post-net neutrality Internet looks like:&#10;<a href="http://t.co/EpfI14sFBF">http://t.co/EpfI14sFBF</a></p>&mdash; Michel Jansen (@dawuss) <a href="https://twitter.com/dawuss/statuses/499623581450780674">August 13, 2014</a></blockquote>
+
+          <blockquote class="twitter-tweet" lang="en"><p>so in Brazil they sell mobile plans that have free access to Facebook but paid access to the internet and that is why <a href="https://twitter.com/jpginternet">@jpginternet</a> = GENIUS</p>&mdash; allison burtch (@irl) <a href="https://twitter.com/irl/statuses/497805282521923585">August 8, 2014</a></blockquote>
+        
+        
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447677378842510/?type=1" data-width="350"></div>
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447680638842184/?type=1" data-width="350"></div>
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447655315511383/?type=1" data-width="350"></div>
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447981832145398/?type=1" data-width="350"></div>
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447684475508467/?type=1" data-width="350"></div>
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447274688882779/?type=1" data-width="350"></div>
-          <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447679418842306/?type=1" data-width="350"></div>
           
 
 
         </div>
 
         <div class="right-prop">
+        
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447356858874562/?type=1" data-width="350"></div>
+          
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447678985509016/?type=1" data-width="350"></div>
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/posts/1447683468841901" data-width="350"></div>
           <div class="fb-post" data-href="https://upload.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1448386725438242/?type=1" data-width="350"></div>
@@ -169,12 +192,13 @@
           <!-- <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445184339091814.1073741825.1445183662425215/1448349458775302/?type=1" data-width="350"></div> -->
           <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447677935509121/?type=1" data-width="350"></div>
           <div class="fb-post" data-href="https://upload.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1448378092105772/?type=1" data-width="350"></div>
+          <div class="fb-post" data-href="https://www.facebook.com/JPGInternet/photos/a.1445547829055465.1073741828.1445183662425215/1447679418842306/?type=1" data-width="350"></div>
 
-
-        <blockquote class="twitter-tweet" lang="en"><p>so in Brazil they sell mobile plans that have free access to Facebook but paid access to the internet and that is why <a href="https://twitter.com/jpginternet">@jpginternet</a> = GENIUS</p>&mdash; allison burtch (@irl) <a href="https://twitter.com/irl/statuses/497805282521923585">August 8, 2014</a></blockquote>
 
         
+
         <blockquote class="twitter-tweet" lang="en"><p>omg this is amazing. in response to facebook only internet plans: <a href="https://t.co/ZeeVAjFm6e">https://t.co/ZeeVAjFm6e</a> . post a url, it posts back a screenshot O_O</p>&mdash; Jonathan Dahan (@jedahan) <a href="https://twitter.com/jedahan/statuses/497498514973532160">August 7, 2014</a></blockquote>
+        
         
         </div>
 
@@ -182,9 +206,6 @@
         <div style="clear:both;"></div>        
       </div>
        
-    <a style="background:purple;color:yellow;display:block;font-size:40px;text-align:center;padding:40px;margin-top:30px;" href="https://www.facebook.com/JPGInternet"> Get your FREE JPG now! >>> </a>
-
-    </div>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
